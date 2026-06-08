@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Format\Application\UseCase;
+
+use App\Format\Domain\Repository\FormatRepositoryInterface;
+
+class GetSuggestionGenresUseCase
+{
+    public function __construct(
+        private FormatRepositoryInterface $repository
+    ) {}
+
+    public function execute(?string $category = null): array
+    {
+        return $this->repository->getGenresByCategory($category);
+    }
+}

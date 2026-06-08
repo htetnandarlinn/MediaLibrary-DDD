@@ -1,0 +1,247 @@
+
+/* PAGE WRAPPER */
+.invoice-page {
+    width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f6f8fb;
+    font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.invoice-page h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* TABLE */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+.invoice-table thead {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.invoice-table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ROW */
+.invoice-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+/* STRIPE ROWS */
+.invoice-table tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+/* HOVER */
+.invoice-table tbody tr:hover {
+    background: #eef6ff;
+    transition: 0.2s;
+}
+
+/* STATUS BASE STYLE */
+.status {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* STATUS COLORS */
+.status-paid {
+    color: #1e7e34;
+    background: #d4f8e8;
+}
+
+.status-pending {
+    color: #856404;
+    background: #fff3cd;
+}
+
+.status-failed {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+/* ACTION BUTTON */
+.invoice-view-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.invoice-view-btn:hover {
+    background: #357ac9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .invoice-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================
+   INVOICE DETAIL MODERN UI
+========================= */
+
+.invoice-detail-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.invoice-header h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+.invoice-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* GRID */
+.invoice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.item {
+    background: #f9f9f9;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.item label {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.item div {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* AMOUNT BOX */
+.invoice-amount {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e8fff0, #f3fff7);
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+}
+
+.invoice-amount span {
+    font-size: 13px;
+    color: #666;
+}
+
+.invoice-amount h3 {
+    margin: 5px 0 0;
+    font-size: 26px;
+    color: #28a745;
+}
+
+/* STATUS BADGE */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.status-badge.paid {
+    background: #28a745;
+}
+
+.status-badge.pending {
+    background: #ffc107;
+    color: #000;
+}
+
+.status-badge.failed {
+    background: #dc3545;
+}
+
+/* ACTION BUTTONS */
+.invoice-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-download {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background: #0056b3;
+}
+
+.btn-back {
+    background: #6c757d;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background: #545b62;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .invoice-grid {
+        grid-template-columns: 1fr;
+    }
+}
