@@ -12,6 +12,8 @@ use App\User\Application\UseCase\RegisterUserUseCase;
 use App\User\Presentation\Request\LoginRequest;
 use App\User\Presentation\Request\RegisterUserRequest;
 
+
+//User Controller DDD structure
 class UserController extends BaseController
 {
     private ?AuthenticateUserUseCase $authenticateUserUseCase;
